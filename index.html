@@ -6,8 +6,8 @@
 #divpt {
 position:relative;
 font-family: Consolas;
-width:50%;
-height:60%;
+width:42%;
+height:70%;
 border:2px solid #010208;
 padding:4px 5px;
 text-align:left;
@@ -15,28 +15,55 @@ margin: 0 auto;
 position: relative;
 }
 
-.img-center  {
-	text-align:Center;
+#divpt h5 {
+margin:10px auto;
+padding:5px 5px;
+font-size: 15px;
+}
+#divpt h4 {
+margin:10px auto;
+padding:5px 5px;
+color: grey
 }
   
 #div2 {
 display: inline-block;
-margin:10px;
 width: 80px;
-height: 30px;
+height: 35px;
 border:2px dotted green;
-padding: 10px
 }
 
-#divpt h3 {
-margin:5px auto;
-padding:5px 5px;
+#Lovelace, #Hopper, #WWII {
+    display:inline-block;
+    justify-content: center;
 }
-#divpt h4 {
-margin:5px auto;
-padding:5px 5px;
-color: grey
+
+h1 {
+color: #000000;
+font-family: Optima;
+font-size: 36px;
+font-weight: bold;
+margin-top: 50px;
+margin-bottom: 1px
 }
+
+h2 {
+color: #000000;
+font-family: Optima;
+font-size: 20px;
+font-weight: normal;
+margin-top: 1px;
+}
+
+h3 {
+color: #999999;
+font-family: Optima;
+font-size: 16px;
+font-weight: normal; 
+margin-bottom: 50px; 
+}
+
+
 </style>
 </head>
 <body>
@@ -47,29 +74,26 @@ color: grey
 <h3 style="text-align: center">to find out why & how you could be like them, <a href="CS.html">click here</a></h3>
 
 <div id='divpt' class='cls'>
-    <pre><h3>print( <div id='div2' ondrop="drop(event)" ondragover="allowDrop(event)">             );</div></h3>
+    <pre><h5>print(  <div id='div2' ondrop="drop(event)" ondragover="allowDrop(event)">                );</div></h5>
     <h4><br><br><br>#press enter to view profile</h4>
    <br style='clear:both;'>
 </div>
 
-
-<div id="Lovelace" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <div class="img-center">
+<div class="container" style= "text-align:center; margin-left: 30%; margin-right: auto;">
+<div id="Lovelace" style="display:table-cell" ondrop="drop(event)" ondragover="allowDrop(event)">
     <img src="static/Lovelace.png" block draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="44">
-    </div>
 </div>
-
-<div id="Hopper" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <div class="img-center">
+<div id="Hopper" style="display:table-cell" ondrop="drop(event)" ondragover="allowDrop(event)">
     <img src="static/Hopper.png" draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="44">
-    </div>
+</div>
+<div id="WWII" style="display:table-cell" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="static/WWII.png" draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="44">
+</div>
 </div>
 
-<div id="WWII" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <div class="img-center">
-    <img src="static/WWII.png" draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="44">
-    </div>
-</div>
+<button type="button" onClick="window.location.reload()">
+    Reload
+ </button>
 
 
 </body>
