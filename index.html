@@ -14,12 +14,16 @@ text-align:left;
 margin: 0 auto;
 position: relative;
 }
+
+.img-center  {
+	text-align:Center;
+}
   
 #div2 {
 display: inline-block;
 margin:10px;
-width: 86px;
-height: 36px;
+width: 80px;
+height: 30px;
 border:2px dotted green;
 padding: 10px
 }
@@ -43,27 +47,30 @@ color: grey
 <h3 style="text-align: center">to find out why & how you could too, <a href="CS.html">click here</a></h3>
 
 <div id='divpt' class='cls'>
-    <pre><h3>print( <div id='div2' ondrop="drop(event)" ondragover="allowDrop(event)">           );</div></h3>
+    <pre><h3>print( <div id='div2' ondrop="drop(event)" ondragover="allowDrop(event)">             );</div></h3>
     <h4><br><br><br>#press enter to view profile</h4>
    <br style='clear:both;'>
 </div>
 
 
 <div id="Lovelace" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <div style='display: inline-block; vertical-align: top;'>
-    <img src="static/Lovelace.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="44">
+    <div class="img-center">
+    <img src="static/Lovelace.png" block draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="44">
+    </div>
 </div>
 
 <div id="Hopper" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <div style='display: inline-block; vertical-align: top;'>
+    <div class="img-center">
     <img src="static/Hopper.png" draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="44">
+    </div>
 </div>
 
 <div id="WWII" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <div style='display: inline-block; vertical-align: top;'>
+    <div class="img-center">
     <img src="static/WWII.png" draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="44">
+    </div>
 </div>
-  
+
 
 </body>
 </html>
