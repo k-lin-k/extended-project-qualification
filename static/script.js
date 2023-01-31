@@ -8,8 +8,7 @@ function drag(ev) {
 
 function drop(ev) {
   ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
+  ev.target.replaceChild(document.getElementById(data), div2);
 }
 
 var elem = document.getElementById(data);
@@ -22,12 +21,12 @@ function enter(){
 }
 
 function validate(elem) {
-    if(elem == "Lovelace"){
-        location.href="https://support.wwf.org.uk/earth_hour/index.php?type=individual";
-    } else if(elem == "Hopper"){
-
-    } else if(elem == "WWII"){
-
+    if(ev.target.id == "Lovelace"){
+        window.location.href="/Lovelace.html";
+    } else if(ev.target.id == "Hopper"){
+        window.location.href="Hopper.html";
+    } else if(ev.target.id == "WWII"){
+        window.location.href="WWII.html";
     } else {
         alertEmpty()
     }
