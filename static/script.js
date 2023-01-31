@@ -7,20 +7,10 @@ function drag(ev) {
 }
 
 function drop(ev) {
-  ev.preventDefault();
-  ev.target.replaceChild(document.getElementById(data), div2);
-}
-
-var elem = document.getElementById(data);
-
-function enter(){
-    if(event.keyCode == 13){
-       validate();
-    }
-
-}
-
-function validate(elem) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    var elem = document.getElementById(data);
+    ev.target.appendChild(document.getElementById(data));
     if(ev.target.id == "Lovelace"){
         window.location.href="/Lovelace.html";
     } else if(ev.target.id == "Hopper"){
@@ -28,6 +18,6 @@ function validate(elem) {
     } else if(ev.target.id == "WWII"){
         window.location.href="WWII.html";
     } else {
-        alertEmpty()
-    }
+        alertempty()
+  }
 }
